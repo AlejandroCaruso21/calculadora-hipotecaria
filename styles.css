@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 800px; /* Aumentamos el ancho para la tabla */
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -44,6 +44,19 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+}
+
+input {
+    width: 80px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#total-m2, #total-cant, #precio-total-cocheras, #precio-venta-oficinas, #precio-venta-locales, #precio-total-bauleras,
+#inversion-m2-resultado, #total-construccion, #total-anticipo-resultado, #saldo-cuotas, #saldo-48-cuotas, #cuota-total {
+    font-weight: bold;
+    color: #006400;
 }
 
 h3 {
