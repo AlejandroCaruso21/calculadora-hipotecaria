@@ -2,17 +2,70 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Calculadora Hipotecaria V1</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Vincula el CSS -->
+    <title>Calculadora Hipotecaria V2</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Calculadora Hipotecaria - V1</h1>
+    <h1>Calculadora Hipotecaria - V2</h1>
+    
+    <!-- Sección de Cotizaciones -->
     <div id="cotizaciones">
         <h2>Cotizaciones Actuales</h2>
         <p><strong>Dólar MEP:</strong> <span id="dolar-mep">Cargando...</span></p>
         <p><strong>Valor UVA:</strong> <span id="uva">Cargando...</span></p>
         <button onclick="actualizarDatos()">Actualizar</button>
     </div>
-    <script src="script.js"></script> <!-- Vincula el JS -->
+
+    <!-- Nueva Sección: Análisis de Proyecto -->
+    <div id="analisis-proyecto">
+        <h2>Análisis de Proyecto</h2>
+        <h3>Departamentos</h3>
+        <table>
+            <tr><th>Tipo</th><th>Delta Obra</th><th>M²</th><th>Cantidad</th></tr>
+            <tr><td>Monoambientes</td><td>100%</td><td>2801,01</td><td>78</td></tr>
+            <tr><td>Monoambientes c/Patio</td><td>100%</td><td>218,44</td><td>6</td></tr>
+            <tr><td>1 Dormitorio</td><td>100%</td><td>2453,4</td><td>40</td></tr>
+            <tr><td>2 Dormitorio</td><td>100%</td><td>1706,79</td><td>18</td></tr>
+            <tr><td>2 Dormitorios c/quincho y terraza</td><td>100%</td><td>939,57</td><td>6</td></tr>
+            <tr><td><strong>Superficie Propia Deptos</strong></td><td>100%</td><td>8119,21</td><td>148</td></tr>
+        </table>
+        <p>Precio de venta: <strong>USD 1.708,88</strong></p>
+
+        <h3>Cocheras</h3>
+        <table>
+            <tr><th>Tipo</th><th>Precio</th><th>Cantidad</th></tr>
+            <tr><td>Cubiertas</td><td>USD 15.000</td><td>121</td></tr>
+            <tr><td>Descubiertas</td><td>USD 0</td><td>0</td></tr>
+        </table>
+
+        <h3>Oficinas</h3>
+        <p>Superficie propia: 80,57% - 700,46 m² - 7 unidades</p>
+        <p>Precio de venta: <strong>USD 2.051</strong></p>
+
+        <h3>Locales Comerciales</h3>
+        <p>Superficie propia: 80,57% - 519,52 m² - 2 unidades</p>
+        <p>Precio de venta: <strong>USD 2.392</strong></p>
+
+        <h3>Bauleras</h3>
+        <p>Precio unitario: <strong>USD 10.000</strong> - 0 unidades</p>
+
+        <h3>Amenities</h3>
+        <p>Terraza: 25% - 1139,66 m²</p>
+
+        <h3>Áreas Comunes</h3>
+        <p>Áreas de circulación: 81% - 1603,72 m²</p>
+        <p>Sala de máquinas: 45% - 85,56 m²</p>
+        <p>Estacionamiento: 45% - 3659,09 m²</p>
+
+        <h3>Construcción</h3>
+        <p>Inversión en construcción por m²: <strong>USD 900</strong></p>
+        <p>Total construcción: <strong>USD 11.140.989</strong></p>
+        <p>Anticipo (20%): <strong>USD 2.228.198</strong></p>
+        <p>Saldo a pagar en cuotas: <strong>USD 8.912.791</strong></p>
+        <p>Obra finalizada: 48 meses</p>
+        <p>Saldo a pagar en 48 cuotas: <strong>USD 185.683</strong> por cuota (1,7% del total)</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
