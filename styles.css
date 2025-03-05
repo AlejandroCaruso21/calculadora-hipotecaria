@@ -1,30 +1,56 @@
 body {
-    font-family: Arial, sans-serif; /* Fuente general */
-    max-width: 600px; /* Ancho máximo */
-    margin: 0 auto; /* Centrado */
-    padding: 20px; /* Espacio interno */
+    font-family: Arial, sans-serif;
+    max-width: 800px; /* Aumentamos el ancho para la tabla */
+    margin: 0 auto;
+    padding: 20px;
 }
 
 h1 {
-    text-align: center; /* Título centrado */
-    color: #333; /* Color gris oscuro */
+    text-align: center;
+    color: #333;
 }
 
-#cotizaciones {
-    border: 1px solid #ccc; /* Borde gris claro */
-    padding: 15px; /* Espacio interno */
-    border-radius: 5px; /* Bordes redondeados */
+#cotizaciones, #analisis-proyecto {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 button {
-    padding: 5px 10px; /* Tamaño del botón */
-    margin-top: 10px; /* Espacio superior */
-    background-color: #007BFF; /* Azul */
-    color: white; /* Texto blanco */
-    border: none; /* Sin borde */
-    cursor: pointer; /* Mano al pasar el ratón */
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #444;
+}
+
+p {
+    margin: 5px 0;
 }
